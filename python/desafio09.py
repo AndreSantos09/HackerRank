@@ -1,14 +1,15 @@
-def numCells(grid):
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())
 
-        grid_rows = int(input().strip())
-        grid_columns = int(input().strip())
+# lista com o loop for
+i = [p for p in range(x+1)]
+j = [m for m in range(y+1)]
+k = [n for n in range(z+1)]
 
-        grid = [[1,2,7],[4,5,6],[8,8,9]]
+lista = [[q,w,e] for q in i for w in j for e in k]
 
-        for _ in range(grid_rows):
-            grid.append(list(map(int, input().rstrip().split())))
+lista2 = [t for t in lista if sum(t) != n]
 
-        result = numCells(grid)
-
-a = 0
-numCells(a)        
+print(lista2)
