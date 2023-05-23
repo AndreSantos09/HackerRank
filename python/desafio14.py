@@ -1,0 +1,5 @@
+n = input()
+mapa = map(int,input().split())
+t = tuple(mapa)
+result = hash(t)
+print(result)
